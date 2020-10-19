@@ -2,7 +2,6 @@ package gmail.umarosman77.sudoku_rest_server.config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
-import io.swagger.v3.oas.models.info.License;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,8 +15,6 @@ public class OpenApiTestConfig {
 				.info(new Info()
 						.title("Sudoku")
 						.version(applicationVersion)
-						.description(applicationDescription)
-						.termsOfService("http://swagger.io/terms/")
-						.license(new License().name("Apache 2.0").url("http://springdoc.org")));
+						.description(applicationDescription));
 	}
 }
